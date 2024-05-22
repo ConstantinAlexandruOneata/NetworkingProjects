@@ -1,14 +1,10 @@
 <div class="WordSection1">
 
-**<span style="font-size:20.0pt;line-height:115%">1.<span
-style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span
-style="font-size:20.0pt;line-height:115%">Inter-Vlan Connectivity,
-EtherChannels & DHCP servers (internal & external)</span>**
+<h1>Inter-Vlan Connectivity, EtherChannels & DHCP servers (internal & external)</h1>
 
-**<span style="font-size:20.0pt;line-height:115%"> </span>**
+<h2>Description</h2>
 
-<u><span
-style="font-size:12.0pt;line-height:115%">Description</span></u>
+This project involves configuring inter-VLAN connectivity, setting up EtherChannels for redundancy, and implementing both internal and external DHCP servers for dynamic IP address allocation. It also includes enabling IPv6 and ensuring seamless inter-VLAN communication.
 
 <span style="font-size:12.0pt;line-height:115%"> </span>
 
