@@ -5,13 +5,13 @@
 <p> In this lab, I will use NAT, dynamic routing protocols and static routes to connect two
 sites (Building A & Building B) together. </p>
 
-<p> Building A uses the following addressing scheme: </p>
+<p> Building A will use the following addressing scheme: </p>
 
 <span
 style="font-size:12.0pt;line-height:115%"><img src="Photos/image032.png"
 id="image32.png" data-border="0" width="500" height="180" /></span>
 
-<p> And Building B uses the addressing scheme below: </p>
+<p> And Building B will use the addressing scheme below: </p>
 
 <img src="Photos/image033.png"
 id="image33.png" data-border="0" width="624" height="237" />  
@@ -26,7 +26,7 @@ configuration </p>
 
 <h3>➤ NAT/PAT </h3>
 
-<p> Interfaces were configured with an IPv4 and IPv6 address matching the physical network diagram previously presented</p>
+<p> The interfaces were configured with an IPv4 and IPv6 address matching the physical network diagram previously presented</p>
 
 <img src="Photos/image035.png" id="image35.png" data-border="0" width="624" height="85" />
 <img src="Photos/image036.png" id="image36.png" data-border="0" width="624" height="85" />
@@ -46,7 +46,7 @@ complete the PAT configuration </p>
 
 <img src="Photos/image040.png" id="image40.png" data-border="0" width="625" height="21" />
 
-<p> With that, ip hosts with private IP addresses in the above subnets can now reach other hosts on
+<p> With that, IP hosts with private IP addresses in the above subnets can now reach other hosts on
 the internet.</p>
 
 <img src="Photos/image041.png" id="image41.png" data-border="0" width="624" height="165" />
@@ -55,8 +55,7 @@ the internet.</p>
 
 <img src="Photos/image042.png" id="image42.png" data-border="0" width="623" height="53" />
 
-<p> And since the inside and outside interfaces have already been configured, we can now check the connectivity, trying to reach the HTTP server from PC F in subnet
-192.168.30.0/24 </p>
+<p> And since the inside and outside interfaces have already been configured, we can now check the connectivity, trying to reach the HTTP server from PC F's web browser in subnet 192.168.30.0/24 </p>
 
 <img src="Photos/image043.png" id="image43.png" data-border="0" width="379" height="252" />
 
@@ -67,27 +66,27 @@ the internet.</p>
 <h4> OSPFv2 Configuration </h4>
 
 <p> OSPFv2 has been enabled on the following interfaces and subinterfaces using a single area
-design. </p>
+design </p>
 
 <img src="Photos/image044.png" id="image44.png" data-border="0" width="624" height="139" />
 
-<p> The interfaces facing the private network were configured as passive-interfaces to reduce the CPU overhead and bandwidth.</p>
+<p> The interfaces connected to the private network were configured as passive-interfaces to reduce the CPU overhead and bandwidth </p>
 
 <img src="Photos/image045.png" id="image45.png" data-border="0" width="624" height="73" />
 
-<p> The other 2 WAN interfaces have been configured using the newer interface configuration, and the rest of the routers in area 0 were configured in a similar
-manner </p> 
+<p> With the other 2 WAN interfaces been configured using the newer per-interface configuration mode, and the rest of the routers in area 0 were configured in a similar manner </p> 
 
 <img src="Photos/image046.png" id="image46.png" data-border="0" width="624" height="140" />
 
-<p> The point to point ethernet interfaces have been configured with the appropriate network type to reduce the CPU overhead and convergence time</p>
+<p> And the point to point ethernet interfaces have been configured with the appropriate network type to reduce the CPU overhead and convergence time</p>
 
 <img src="Photos/image047.png" id="image47.png" data-border="0" width="624" height="115" />
 
 <p> Next, I will change the default reference bandwidth across all routers in area 0 to future proof the design for a potential bandwidth upgrade to 10Gbps </p>
+
 <img src="Photos/image048.png" id="image48.png" data-border="0" width="625" height="89" />  
   
-<p> Create a static default route on the edge router  </p>
+<p> I then configured a static default route on the edge router  </p>
 
 <img src="Photos/image049.png" id="image49.png" data-border="0" width="624" height="28" />
   
@@ -113,7 +112,7 @@ manner </p>
 
 <img src="Photos/image054.png" id="image54.png" data-border="0" width="625" height="324" />
 
-<p> Next, I will enable OSPFv3 for each router interface within the topology. Because I use an earlier version of IOS in Packet Tracer, I need to configure the routers
+<p> Next, I will enable OSPFv3 on each router interface within the topology. Because I use an earlier version of IOS in Packet Tracer, I need to configure the routers
 with the legacy commands “ipv6 router ospf”, “ipv6 ospf {process-id} area {area-id}...etc. </p>
 
 <img src="Photos/image055.png" id="image55.png" data-border="0" width="468" height="262" />
@@ -134,8 +133,7 @@ with the legacy commands “ipv6 router ospf”, “ipv6 ospf {process-id} area 
 
 <img src="Photos/image059.png" id="image59.png" data-border="0" width="624" height="60" />
 
-<p> And enable the advertisement of default route information across the OSPFv3 enabled
-routers</p>
+<p> And enable the advertisement of default route information across the OSPFv3 enabled routers</p>
 
 <img src="Photos/image060.png" id="image60.png" data-border="0" width="624" height="47" />
 
@@ -143,7 +141,7 @@ routers</p>
 
 <img src="Photos/image061.png" id="image61.png" data-border="0" width="624" height="425" />
 
-<p> And a ping was issued from PC D in VLAN 10 to 2001:1234:5678:9BBB::1, the IPv6 address on Router 11 GigabitEthernet Interface to test the connectivity  </p>
+<p> And a ping was issued from PC D in VLAN 10 to 2001:1234:5678:9BBB::1, the IPv6 address on Router 11 GigabitEthernet interface to test the connectivity  </p>
 
 <img src="Photos/image062.png" id="image62.png" data-border="0" width="529" height="220" />
 
@@ -153,12 +151,11 @@ routers</p>
 
 <h4> EIGRPv4 Configuration</h4>
 
-<p> I will start the configuration by creating the EIGRP process and defining the interfaces which will enable EIGRP on each router, starting with Router 1</p>
+<p> I will start this configuration by creating the EIGRP process and defining the interfaces which will enable EIGRP on each router, starting with Router 1 </p>
 
 <img src="Photos/image063.png" id="image63.png" data-border="0" width="624" height="116" />
 
-<p> The same configuration with the appropriate parameters has been applied across the rest of the
-routers. </p>
+<p> The same configuration with the appropriate parameters has been applied across the rest of the routers </p>
 
 <p> Next, I will configure the passive-interfaces </p>
 
@@ -182,7 +179,7 @@ routers. </p>
 
 <h4> EIGRPv6 Configuration</h4>
 
-<p> Firstly, I will create the EIGRPv6 process, assign router IDs and enable EIGRP with the “no shutdown” command across the routers, starting with router 0</p>
+<p> Firstly, I will create the EIGRPv6 process, assign router IDs and enable EIGRP with the “no shutdown” command across the routers, starting with router 0 </p>
 
 <img src="Photos/image069.png" id="image69.png" data-border="0" width="624" height="97" />
 
@@ -217,7 +214,7 @@ routers. </p>
 <p> Now that the OSPF and EIGRP networks have been configured and the routes learnt by every device in each topology, I will connect the two together using
 eBGP.</p>
 
-<p> The following IP addressing scheme and AS numbers assignment has been applied</p>
+<p> The following IP addressing scheme and AS numbers assignment has been chosen </p>
 
 <img src="Photos/image076.png" id="image76.png" />
 
@@ -241,7 +238,6 @@ eBGP.</p>
 
 <img src="Photos/image082.png" id="image82.png" data-border="0" width="606" height="607" />
 
-<p> And a ping from PC I in AS 65100 was sent to check connectivity with Router 0(1) in AS
-65200</p>
+<p> And a ping from PC I in AS 65100 was sent to check connectivity with Router 0(1) in AS 65200 </p>
 
 <img src="Photos/image083.png" id="image83.png" data-border="0" width="624" height="277" />
