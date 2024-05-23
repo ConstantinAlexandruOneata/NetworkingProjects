@@ -1,5 +1,3 @@
-<div class="WordSection1">
-
 <h1>Inter-Vlan Connectivity, EtherChannels & DHCP </h1>
 
 <h2>Description</h2>
