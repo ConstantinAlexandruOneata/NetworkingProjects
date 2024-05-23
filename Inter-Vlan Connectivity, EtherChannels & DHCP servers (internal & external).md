@@ -41,7 +41,7 @@ been replicated accordingly on the other 2 switches in the topology.
 
 <p> Next, I will configure Layer 2 EtherChannels between the 3 switches for improved redundancy and to reduce STP convergence time in the event of a link failure. I will use static mode, PAgP and LACP.</p>
 
-<h4>➤ Static Layer 2 EtherChannel </h4>
+<h3>➤ Static Layer 2 EtherChannel </h3>
 
 <p>The following configuration has been applied on both ends on the link between the
 first group of switches.</p>
@@ -57,7 +57,7 @@ have been allowed on the trunk</p>
 style="font-size:12.0pt;line-height:115%"><img src="Photos/image006.png"
 id="image6.png" width="624" height="92" /></span>
 
-<h4>➤ PAgP EtherChannel</h4>
+<h3>➤ PAgP EtherChannel</h3>
 
 <p>The following configuration has been applied on the first of the two switches in the
 second group.</p>
@@ -75,7 +75,7 @@ id="image8.png" width="624" height="93" /></span>
 <p> After that, both switches have been added the previous configuration to allow traffic from VLAN 10, 20 and
 30, and the native VLAN. </p>
 
-<h4>➤ LACP EtherChannel</h4>
+<h3>➤ LACP EtherChannel</h3>
 
 <p>The first of the two switches in the third group have been configured as such:</p>
 
@@ -91,7 +91,7 @@ id="image10.png" width="624" height="48" /></span>
 
 <hr>
 
-<h4>➤ Inter-Vlan Connectivity with Sub-interfaces </h4>
+<h3>➤ Inter-Vlan Connectivity with Sub-interfaces </h3>
 
 <p>Now that the two ports on both ends of the link have been configured as an etherchannel, the trunk formed, and the VLANs have been allowed on the trunk, I will
 configure the sub-interfaces on the router. </p>
@@ -179,7 +179,7 @@ id="image23.png" width="624" height="289" /></span>
 
 <hr>
 
-<h4>➤ Inter-Vlan Connectivity with SVI </h4>
+<h3>➤ Inter-Vlan Connectivity with SVI </h3>
 
 <p> For simplicity sake, I copied the topology and maintained the same IP addressing scheme, but this time I will use a multilayer switch and create SVIs </p>
 
