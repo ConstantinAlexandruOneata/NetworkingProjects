@@ -157,9 +157,4 @@ the default gateway and the following ip addressing scheme </p>
 <img src="Photos/image031.png"
 id="image31.png" width="558" height="310" /></span>
 
-
-<span style="font-size:12.0pt;line-height:115%">Follow this
-</span>[<span style="font-size:12.0pt;line-height:
-115%;color:#1155CC">link</span>](https://github.com/ConstantinAlexandruOneata/NetworkingProjects/blob/main/Connecting%20two%20Branch%20Offices%20with%20static%20routes%20%26%20dynamic%20routing%20protocols%20(OSPFv2%2C%20OSPFv3%2C%20EIGRP%2C%20EIGRPv6%2C%20BGP)%20%2B%20NAT%5CPAT.md)<span
-style="font-size:12.0pt;line-height:
-115%"> to see the next project</span>
+Follow this [link](https://github.com/ConstantinAlexandruOneata/NetworkingProjects/blob/main/Connecting%20two%20Branch%20Offices%20with%20static%20routes%20%26%20dynamic%20routing%20protocols%20(OSPFv2%2C%20OSPFv3%2C%20EIGRP%2C%20EIGRPv6%2C%20BGP)%20%2B%20NAT%5CPAT.md) to see the next project</span>
