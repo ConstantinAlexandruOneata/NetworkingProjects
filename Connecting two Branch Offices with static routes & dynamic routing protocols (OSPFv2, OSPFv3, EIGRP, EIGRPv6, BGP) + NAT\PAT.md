@@ -147,6 +147,8 @@ routers</p>
 
 <img src="Photos/image062.png" id="image62.png" data-border="0" width="529" height="220" />
 
+<hr>
+
 <h3>➤ EIGRPv4 & EIGRPv6 </h3>
 
 <h4> EIGRPv4 Configuration</h4>
@@ -207,6 +209,8 @@ routers. </p>
 <p> Lastly, I will send a ping from PC F in VLAN 30 to 2001:1234:5678:9BBC::1 - the IPv6 address of one of the routers interfaces</p>
 
 <img src="Photos/image075.png" id="image75.png" data-border="0" width="624" height="253" />
+
+<hr>
 
 <h3>➤ eBGP </h3>
 
