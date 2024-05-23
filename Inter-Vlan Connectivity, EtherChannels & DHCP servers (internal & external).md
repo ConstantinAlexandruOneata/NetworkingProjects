@@ -223,7 +223,7 @@ id="image29.png" width="624" height="197" /></span>
 style="font-size:12.0pt;line-height:115%"><img src="Photos/image030.png"
 id="image30.png" width="624" height="282" /></span>
 
-<p> To connect the two sites together, I prepared a different lab in which I will configure static & dynamic routing using OSPFv2, OSPFv3, EIGRPv4, EIGRPv6, and eBGP  </p>
+<p> To connect the two sites together, I prepared a different lab in which I will configure static & dynamic routing using OSPFv2, OSPFv3, EIGRPv4, EIGRPv6, & eBGP  </p>
   
 <p> The second site which was originally configured with switched virtual interfaces and the same ip addressing scheme is now using a router as
 the default gateway and the following ip addressing scheme </p>
