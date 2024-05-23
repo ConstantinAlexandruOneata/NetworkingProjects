@@ -6,7 +6,7 @@
 
 <hr>
 
-<h4> ➤ HSRP - Hot Standby Router Protocol</h4>
+<h3> ➤ HSRP - Hot Standby Router Protocol</h3>
 
 <p> The following IP addressing scheme was selected for the router interfaces</p>
 
@@ -39,7 +39,7 @@ router for VLAN 20) </p>
 
 <hr>
 
-<h4>➤ DHCP Snooping</h4>
+<h3>➤ DHCP Snooping</h3>
 
 <p> The following switches will be configured for DHCP Snooping, DAI and Port Security </p>
 
@@ -63,7 +63,7 @@ router for VLAN 20) </p>
 
 <hr>
 
-<h4>➤ DAI - Dynamic ARP Inspection </h4>
+<h3>➤ DAI - Dynamic ARP Inspection </h3>
 
 <p> Continuing from the previous configuration of DHCP Snooping, I will now enable DAI for every VLAN </p>
 
@@ -83,7 +83,7 @@ router for VLAN 20) </p>
 
 <hr>
 
-<h4>➤ Port Security </h4>
+<h3>➤ Port Security </h3>
 
 <p> Having already configured each port as either static access or trunk, I will now enable port security on the switches interfaces</p>
 
@@ -111,7 +111,7 @@ dynamic learning of mac addresses through “switchport port-security mac-addres
 
 <hr>
 
-<h4>➤ ACL - Access Control Lists </h4>
+<h3>➤ ACL - Access Control Lists </h3>
 
 <p> For this section I will create 3 access lists in total - 2 extended ACLs and 1 standard, defining multiple access control entries and implementing the lists for
 different purposes. </p>
