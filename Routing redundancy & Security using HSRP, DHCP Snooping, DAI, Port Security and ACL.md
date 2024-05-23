@@ -45,7 +45,7 @@ router for VLAN 20) </p>
 
 <img src="Photos/image092.png" id="image92.png" data-border="0" width="624" height="525" />
 
-<p> And will use the following VLAN & IP addressing scheme</p>
+<p> And will use the VLAN & IP addressing scheme presented below </p>
 
 <img src="Photos/image093.png" id="image93.png" data-border="0" width="490" height="142" />
 
@@ -85,17 +85,16 @@ router for VLAN 20) </p>
 
 <h3>➤ Port Security </h3>
 
-<p> Having already configured each port as either static access or trunk, I will now enable port security on the switches interfaces</p>
+<p> Having already configured each port as either static access or trunk, I will now enable port security on the interfaces</p>
 
 <img src="Photos/image101.png" id="image101.png" data-border="0" width="624" height="85" />
 
-<p> Since Packet Tracer doesn’t allow err-recovery, I will change the violation mode to restrict, so that the interface will stay up if a violation
+<p> Since Packet Tracer doesn’t allow err-recovery, I will change the violation mode to restrict so that the interface will stay up if a violation
 occurs</p>
 
 <img src="Photos/image102.png" id="image102.png" data-border="0" width="624" height="17" />
 
-<p> Then, I will change the default maximum number of mac addresses allowed per interface to 20 for each interface that connects to another switch. I will also enable
-dynamic learning of mac addresses through “switchport port-security mac-address sticky”. </p>
+<p> Then, I will change the default maximum number of mac addresses allowed per interface to 20 for each interface that connects to another switch and to the router. I will also enable dynamic learning of mac addresses through “switchport port-security mac-address sticky”. </p>
 
 <img src="Photos/image103.png" id="image103.png" data-border="0" width="624" height="56" />
 
@@ -128,12 +127,11 @@ different purposes. </p>
 
 <img src="Photos/image109.png" id="image109.png" data-border="0" width="624" height="39" />
 
-<p> Deny telnet connection attempts from addresses starting with 192.168.x.x and going to any hosts, but allow the same addresses to connect to any hosts using SSH
-instead </p>
+<p> Deny telnet connection attempts from addresses starting with 192.168.x.x and going to any hosts, but allow the same addresses to connect to any other hosts using SSH instead </p>
 
 <img src="Photos/image110.png" id="image110.png" data-border="0" width="623" height="35" />
 
-<p> Lastly, I will override the default implicit deny.</p>
+<p> Lastly, I will override the default implicit deny </p>
 
 <img src="Photos/image111.png" id="image111.png" data-border="0" width="624" height="36" />
 
@@ -141,7 +139,7 @@ instead </p>
 
 <img src="Photos/image112.png" id="image112.png" data-border="0" width="624" height="112" />
 
-<p> I will remove statement 30</p>
+<p> Remove statement 30</p>
 
 <img src="Photos/image113.png" id="image113.png" data-border="0" width="562" height="140" />
 
@@ -149,7 +147,7 @@ instead </p>
 
 <img src="Photos/image114.png" id="image114.png" data-border="0" width="624" height="241" />
 
-<p> To verify the operations of this newly created ACL I tried to connect to the HTTP server using the web browser of PC F, and received the following error </p>
+<p> To verify the operations of this newly created ACL I tried to connect to the HTTP server using the web browser of PC F, and have received the following error </p>
 
 <img src="Photos/image115.png" id="image115.png" data-border="0" width="624" height="500" />
 
